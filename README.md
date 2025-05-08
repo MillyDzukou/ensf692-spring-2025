@@ -1,3 +1,7 @@
+Name: Mill DZUKOU
+Inspirational quote: "Si vis pacem, para bellum(If you want peace, prepare for war.)", Vegetius.
+
+
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/s6pu2ovU)
 # :wave: The Basics of GitHub (provided by GitHub Classroom)
 
@@ -88,10 +92,10 @@ GitHub Explore is a great place to do just that … explore :smile: You can find
 
 You can check out the GitHub Explore website [at github.com/explore](https://github.com/explore). The more you interact with GitHub the more tailored your Explore view will be. 
 
-## 📝 ENSF 592 - Assignment Tasks
-* Your git settings should already be set from ENSF 593.
+## 📝 ENSF 692 - Assignment Tasks
+* Your git settings should already be set from ENSF 692.
 * Clone this repository to your local computer.
-* Open VSCode and start a new terminal. Make sure that your `ensf592` environment is activated.
+* Open VSCode and start a new terminal. Make sure that your `ensf692` environment is activated.
 * Edit the top of this `README` file to add your first and last name, and your favourite inspirational quote.
 * Edit the `assignment1code.py` file by following the instructions in the comments (add your name to the top comments and then change the contents of `studentName` to be your name. Save.
 * Run the code by typing the command: `python assignment1code.py`  (make sure you are in the directory where the file is saved! Use cd to change directories.
@@ -100,6 +104,16 @@ You can check out the GitHub Explore website [at github.com/explore](https://git
 * Take a screenshot of the welcome chapter and upload it to your assignment repository.
 * Commit your edited `README` and code files, as well as your two new screenshots.
 * Push your local git history to github: `git push origin master`
+
+### WORK DONE
+1. Download the folder containing 2 files: README.md and assignment1code.py
+2. Initiate a git repository where I move the file and add the 2 files
+3. Modify the top of the README.md to add my name and one of my prefered quote.
+4. Modify the 'assignment1code.py' to add my name and some of my skills
+5. Run the program and take a screenshot of the program, then save it into the repositorie
+6. Open the course notes in vscode and take a screenshot of it.
+7. Commit the edited file and the screenshots.
+8. Push the repository online.
 
 ## 📚  Resources 
 * [A short video explaining what GitHub is](https://www.youtube.com/watch?v=w3jLJU7DT5E&feature=youtu.be) 
