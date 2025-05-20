@@ -1,3 +1,4 @@
+# Merci
 # input_processing.py
 # MILLY VITAL DZUKOU TASSE, ENSF 692 Spring 2025
 # A terminal-based program for processing computer vision changes detected by a car.
