@@ -1,4 +1,3 @@
-# Merci
 # input_processing.py
 # MILLY VITAL DZUKOU TASSE, ENSF 692 Spring 2025
 # A terminal-based program for processing computer vision changes detected by a car.
@@ -13,10 +12,10 @@
 # No global variables are permitted
 
 
-# You do not need to provide additional commenting above this class, just the user-defined functions within the class
+# Definition of the sensor class
 class Sensor:
 
-    # Must include a constructor that uses default values
+    # Constructor that uses default values
     # You do not need to provide commenting above the constructor
     def __init__(self, trafficLight = 'green', pedStat='yes', vehiStat='yes'):
         self.trafficLight = trafficLight
@@ -63,8 +62,8 @@ class Sensor:
 
 
 
-# The sensor object should be passed to this function to print the action message and current status
-# Replace these comments with your function commenting
+# This function check the status of the sensor
+# It has 3 conditional statements representing the 3 different states
 def print_message(sensor):
     if (sensor.trafficLight == "red" and sensor.pedStat == "yes" and sensor.vehiStat == "yes" ):
         print("STOP")
@@ -79,7 +78,7 @@ def print_message(sensor):
 
 
 
-# Complete the main function below
+# Main function call, will call all the function in the required order.
 def main():
     print("\n***ENSF 692 Car Vision Detector Processing Program***\n")
     sensor1 = Sensor()
