@@ -55,7 +55,7 @@ def main():
     print("The lowest enrollment for a single grade: {0}".format(new_school.lowestEnrol()))
 
     for i in range(2013, 2023):
-        print("Total enrollment for {0}: {1}".format(i, new_school.totalEnrol()))
+        print("Total enrollment for {0}: {1}".format(i, new_school.totalEnrol(i)))
 
     print("Total ten years enrolment: {0}".format(new_school.total10Enrol()))
 

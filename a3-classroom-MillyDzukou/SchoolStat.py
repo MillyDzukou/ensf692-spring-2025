@@ -17,11 +17,12 @@ class SchoolStat:
     def lowestEnrol(self):
         return int(self.used_data.min())
 
-    def totalEnrol(self):
-        pass
+    def totalEnrol(self, year):
+        year_indice = year - 2013
+        return int(self.used_data[year_indice, :].sum())
 
     def total10Enrol(self):
-        pass
+        return self.used_data.sum()
 
     def medianEnrolOver500(self):
         pass
