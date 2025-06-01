@@ -68,11 +68,11 @@ def main():
     # Print Stage 3 requirements here
     print("\n***General Statistics for All Schools***\n")
 
-    print("Mean enrollment in 2013: {0}".format(new_school.meanEnrolYearly()))
+    print("Mean enrollment in 2013: {0}".format(new_school.meanEnrolYearly(2013)))
 
-    print("Mean enrollment in 2022: {0}".format(new_school.meanEnrolYearly()))
+    print("Mean enrollment in 2022: {0}".format(new_school.meanEnrolYearly(2022)))
 
-    print("Total graduating class of 2022: {0}".format(new_school.totalGraduate()))
+    print("Total graduating class of 2022: {0}".format(new_school.totalGraduate(2022)))
 
     print("Highest enrollment for a single grade: {0}".format(new_school.higestEnrolGrade()))
 

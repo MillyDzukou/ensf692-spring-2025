@@ -21,7 +21,7 @@ class SchoolStat:
 
     def totalEnrol(self, year):
         year_indice = year - 2013
-        return self.used_data[year_indice, :].sum()
+        return int(self.used_data[year_indice, :].sum())
 
     def total10Enrol(self):
         return int(self.used_data.sum())
@@ -36,12 +36,14 @@ class SchoolStat:
     
     
 
-    def meanEnrolYearly(self):
-        pass
+    def meanEnrolYearly(self, year):
+        year_indice = year - 2013
+        return int(np.nanmean(self.data[year_indice, :, :]))
 
-    def totalGraduate(self):
-        pass
-
+    def totalGraduate(self,year):
+        year_indice = year - 2013
+        return int(np.nansum(self.data[year_indice, :,2])) 
+    
     def higestEnrolGrade(self):
         pass
 
