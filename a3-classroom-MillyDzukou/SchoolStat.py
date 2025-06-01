@@ -12,10 +12,10 @@ class SchoolStat:
         return int(self.used_data[:, grade_ln].mean())
 
     def highestEnrol(self):
-        pass
+        return int(self.used_data.max())
 
     def lowestEnrol(self):
-        pass
+        return int(self.used_data.min())
 
     def totalEnrol(self):
         pass
