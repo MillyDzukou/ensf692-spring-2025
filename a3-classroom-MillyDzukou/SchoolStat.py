@@ -31,8 +31,8 @@ class SchoolStat:
 
     def medianEnrolOver500(self):
         mask = self.used_data > 500
-        if mask.sum(): return "No enrollments over 500."
-        return int(self.used_data[mask].median())
+        if not mask.sum(): return "No enrollments over 500."
+        return int(np.median(self.used_data[mask]))
     
     
 
