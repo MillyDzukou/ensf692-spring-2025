@@ -14,7 +14,7 @@ from given_data import year_2013, year_2014, year_2015, year_2016, year_2017, ye
 all_years = [year_2013, year_2014, year_2015, year_2016, year_2017, year_2018, year_2019, year_2020, year_2021, year_2022]
 
 # You may add your own additional classes, functions, variables, etc.
-from utilities import createData, dictOfSchool, userInput
+from utilities import createData, dictOfSchool, userInput, schoolLine
 import SchoolStat
 
 FILE_NAME = "Assignment3Data.csv"
@@ -36,9 +36,9 @@ def main():
     print(userinput)
 
     # TODO: function that will convert user input into number from 1 to 20
-    number = 16
+    school_index = schoolLine(dico, userinput)
 
-    new_school = SchoolStat.SchoolStat(data, number)
+    new_school = SchoolStat.SchoolStat(data, school_index)
 
     # Print Stage 2 requirements here
     print("\n***Requested School Statistics***\n")
@@ -77,6 +77,8 @@ def main():
     print("Highest enrollment for a single grade: {0}".format(new_school.higestEnrolGrade()))
 
     print("Lowest enrollment for a single grade: {0}".format(new_school.lowestEnrolGrade()))
+
+    
 
 
     

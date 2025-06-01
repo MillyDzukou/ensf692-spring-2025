@@ -46,9 +46,10 @@ def dictOfSchool(filecsv):
     return dico
 
 
-# def schoolCode():
-#     print():
-#     user_input = input
-#     schoolcode =9000
-
-#     return schoolcode
+def schoolLine(dico, code):
+    "find the index of the school inside the data"
+    lst_school_code = list(dico.keys())
+    for i in range(len(lst_school_code)):
+        if lst_school_code[i] == str(code):
+            return i
+    return "Unable to find the index of this school"
