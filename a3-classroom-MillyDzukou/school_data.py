@@ -45,9 +45,10 @@ def main():
 
     print("\nSchool name:  {0}, School code: {1}".format(dico.get(userinput), userinput))
 
+    # TODO: mean enrollment
     # Print the mean enrolment for each grade in school
-    for i in range(10,14):
-        print("Mean enrolment for grade {0}: {1}".format(i, new_school.meanEnrol()))
+    for i in range(10,13):
+        print("Mean enrolment for grade {0}: {1}".format(i, new_school.meanEnrol(i)))
 
     print("The Highest enrollment for a single grade: {0}".format(new_school.highestEnrol()))
 
