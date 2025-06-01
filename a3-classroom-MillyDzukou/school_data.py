@@ -45,7 +45,7 @@ def main():
 
     print("\nSchool name:  {0}, School code: {1}".format(dico.get(userinput), userinput))
 
-    # TODO: mean enrollment
+    
     # Print the mean enrolment for each grade in school
     for i in range(10,13):
         print("Mean enrolment for grade {0}: {1}".format(i, new_school.meanEnrol(i)))
@@ -58,8 +58,10 @@ def main():
         print("Total enrollment for {0}: {1}".format(i, new_school.totalEnrol(i)))
 
     print("Total ten years enrolment: {0}".format(new_school.total10Enrol()))
-
-    print("For all enrolment over 500, the median value : {0}".format(new_school.medianEnrolOver500))
+   
+    # TODO: mean enrollment
+    print("Mean total enrollment over 10 years: {0}".format(new_school.meanEnrol10()))
+    print("For all enrolment over 500, the median value : {0}".format(new_school.medianEnrolOver500()))
     
     
 

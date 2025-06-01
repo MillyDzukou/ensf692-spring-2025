@@ -1,3 +1,5 @@
+import numpy as np
+
 class SchoolStat:
     def __init__(self, data, school_number):
         self.data = data
@@ -19,16 +21,20 @@ class SchoolStat:
 
     def totalEnrol(self, year):
         year_indice = year - 2013
-        return int(self.used_data[year_indice, :].sum())
+        return self.used_data[year_indice, :].sum()
 
     def total10Enrol(self):
-        return self.used_data.sum()
+        return int(self.used_data.sum())
+
+    def meanEnrol10(self):
+        return  int(np.sum(self.used_data, axis=1).mean()) # int(np.sum(self.used_data, axis=0))    
 
     def medianEnrolOver500(self):
-        pass
+        mask = self.used_data > 500
+        if mask.sum(): return "No enrollments over 500."
+        return int(self.used_data[mask].median())
     
-    # def meanEnrol(self):
-    #     pass
+    
 
     def meanEnrolYearly(self):
         pass
