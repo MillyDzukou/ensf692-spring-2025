@@ -45,9 +45,9 @@ class SchoolStat:
         return int(np.nansum(self.data[year_indice, :,2])) 
     
     def higestEnrolGrade(self):
-        pass
+        return int(np.nanmax(self.data))
 
     def lowestEnrolGrade(self):
-        pass
+        return int(np.nanmin(self.data))
 
 
