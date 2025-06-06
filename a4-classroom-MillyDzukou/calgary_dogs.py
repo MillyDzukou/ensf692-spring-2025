@@ -6,18 +6,38 @@
 # You must include the main listed below. You may add your own additional classes, functions, variables, etc. 
 # You may import any modules from the standard Python library.
 # Remember to include docstrings and comments.
+import numpy as np
+import pandas as pd
+
 
 def main():
 
     # Import data here
     # TODO Create a dataframe with data from CalgaryDogBreeds.xlsx
     # TODO Do not modify the files, can change index
-    #dog_data =
+    
+    dog_data_xl = pd.read_excel('CalgaryDogBreeds.xlsx')
+    dog_data_df = pd.DataFrame(dog_data_xl)
+    dog_data_df.index =dog_data_df['Year']
+    
 
     print("ENSF 692 Dogs of Calgary")
 
     # User input stage
     # TODO : prompt dog breed(upper case, lower case, mix case)
+    breed_list = pd.Series(dog_data_df['Breed'].unique())
+    print(breed_list[99])
+
+    while True:
+        user_breed = input("Please enter a dog breed: ")
+        
+        if user_breed.upper() in list(breed_list.values):
+            break
+        else: 
+            print("Dog breed not found in the data. Please try again.")
+
+    print(user_breed ,"found in the data")
+
     """       check if it's a breed
             no: KeyError “Dog breed not found in the data. Please try again.” and prompt again
             yes continue the program
