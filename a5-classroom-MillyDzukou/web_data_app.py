@@ -1,6 +1,6 @@
 # web_data_app.py
 # June 2025
-# Modified by: STUDENT NAME
+# Modified by: Milly Dzukou
 #
 # An simple program for demonstrating web applications using Flask and web scraping of data using Beautiful Soup.
 # Detailed specifications are provided via the Assignment 5 README file.
@@ -92,3 +92,5 @@ def learn():
     # Return a string the describes one thing you learned in ENSF 692.
     pass
 
+if __name__ == '__main__':
+    app.run(debug= True)
