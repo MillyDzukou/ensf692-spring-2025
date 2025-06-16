@@ -84,13 +84,18 @@ def book_data():
     book_data = pd.DataFrame(list(zip(titles, prices)), columns=['Titles','Prices'])    
     print(book_data)        # Print to the terminal as confirmation - only we can see this
 
+    # Modify the table to include a column with 25 % reduction.
+    book_data['Discount Price'] = book_data['Prices']*0.75
+
     # Format and print the DataFrame using the html template provided in the templates subdirectory
     return render_template('template.html',  tables=[book_data.to_html(classes='data')], titles=book_data.columns.values)
 
 @app.route("/learn")
 def learn():
     # Return a string the describes one thing you learned in ENSF 692.
-    pass
+    return " One the of the things learned in ENSF 692: Pandas MultiIndex object.<br> \n" \
+    "It is user to set dataframes with more than one index, makes easy the representation<br>" \
+    "multidimensional table. Simplify a lot of what we can do when slicing a dataframe."
 
 if __name__ == '__main__':
     app.run(debug= True)
